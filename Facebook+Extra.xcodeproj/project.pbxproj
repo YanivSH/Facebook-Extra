@@ -1,0 +1,249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79005A2A1713ED3E0050CB95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79005A291713ED3E0050CB95 /* Foundation.framework */; };
+		79005A2F1713ED3E0050CB95 /* Facebook_Extra.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79005A2E1713ED3E0050CB95 /* Facebook_Extra.h */; };
+		79005A311713ED3E0050CB95 /* Facebook_Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 79005A301713ED3E0050CB95 /* Facebook_Extra.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79005A241713ED3E0050CB95 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				79005A2F1713ED3E0050CB95 /* Facebook_Extra.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		79005A261713ED3E0050CB95 /* libFacebook+Extra.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFacebook+Extra.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79005A291713ED3E0050CB95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79005A2D1713ED3E0050CB95 /* Facebook+Extra-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Facebook+Extra-Prefix.pch"; sourceTree = "<group>"; };
+		79005A2E1713ED3E0050CB95 /* Facebook_Extra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Facebook_Extra.h; sourceTree = "<group>"; };
+		79005A301713ED3E0050CB95 /* Facebook_Extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facebook_Extra.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79005A231713ED3E0050CB95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79005A2A1713ED3E0050CB95 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79005A1D1713ED3E0050CB95 = {
+			isa = PBXGroup;
+			children = (
+				79005A2B1713ED3E0050CB95 /* Facebook+Extra */,
+				79005A281713ED3E0050CB95 /* Frameworks */,
+				79005A271713ED3E0050CB95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79005A271713ED3E0050CB95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79005A261713ED3E0050CB95 /* libFacebook+Extra.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79005A281713ED3E0050CB95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79005A291713ED3E0050CB95 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79005A2B1713ED3E0050CB95 /* Facebook+Extra */ = {
+			isa = PBXGroup;
+			children = (
+				79005A2E1713ED3E0050CB95 /* Facebook_Extra.h */,
+				79005A301713ED3E0050CB95 /* Facebook_Extra.m */,
+				79005A2C1713ED3E0050CB95 /* Supporting Files */,
+			);
+			path = "Facebook+Extra";
+			sourceTree = "<group>";
+		};
+		79005A2C1713ED3E0050CB95 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79005A2D1713ED3E0050CB95 /* Facebook+Extra-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79005A251713ED3E0050CB95 /* Facebook+Extra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79005A341713ED3E0050CB95 /* Build configuration list for PBXNativeTarget "Facebook+Extra" */;
+			buildPhases = (
+				79005A221713ED3E0050CB95 /* Sources */,
+				79005A231713ED3E0050CB95 /* Frameworks */,
+				79005A241713ED3E0050CB95 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Facebook+Extra";
+			productName = "Facebook+Extra";
+			productReference = 79005A261713ED3E0050CB95 /* libFacebook+Extra.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79005A1E1713ED3E0050CB95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "SketchHeroes LTD.";
+			};
+			buildConfigurationList = 79005A211713ED3E0050CB95 /* Build configuration list for PBXProject "Facebook+Extra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79005A1D1713ED3E0050CB95;
+			productRefGroup = 79005A271713ED3E0050CB95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79005A251713ED3E0050CB95 /* Facebook+Extra */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79005A221713ED3E0050CB95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79005A311713ED3E0050CB95 /* Facebook_Extra.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		79005A321713ED3E0050CB95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		79005A331713ED3E0050CB95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79005A351713ED3E0050CB95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Facebook_Extra.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Facebook+Extra/Facebook+Extra-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		79005A361713ED3E0050CB95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Facebook_Extra.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Facebook+Extra/Facebook+Extra-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79005A211713ED3E0050CB95 /* Build configuration list for PBXProject "Facebook+Extra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79005A321713ED3E0050CB95 /* Debug */,
+				79005A331713ED3E0050CB95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79005A341713ED3E0050CB95 /* Build configuration list for PBXNativeTarget "Facebook+Extra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79005A351713ED3E0050CB95 /* Debug */,
+				79005A361713ED3E0050CB95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79005A1E1713ED3E0050CB95 /* Project object */;
+}

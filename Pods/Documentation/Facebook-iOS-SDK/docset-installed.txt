@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/Yaniv/Library/Developer/Shared/Documentation/DocSets/org.cocoapods.facebook-ios-sdk.Facebook-iOS-SDK-3.2.1.docset
+Time: 2013-04-09 06:35:14 +0000

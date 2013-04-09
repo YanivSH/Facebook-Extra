@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		79005A2A1713ED3E0050CB95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79005A291713ED3E0050CB95 /* Foundation.framework */; };
-		79005A2F1713ED3E0050CB95 /* Facebook_Extra.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79005A2E1713ED3E0050CB95 /* Facebook_Extra.h */; };
-		79005A311713ED3E0050CB95 /* Facebook_Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 79005A301713ED3E0050CB95 /* Facebook_Extra.m */; };
+		DD12E4217FA24C2898801D62 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E802B6477D764A419E4B65F5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,18 +18,17 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				79005A2F1713ED3E0050CB95 /* Facebook_Extra.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		55D307F7138F47D7A205A767 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		79005A261713ED3E0050CB95 /* libFacebook+Extra.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libFacebook+Extra.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79005A291713ED3E0050CB95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79005A2D1713ED3E0050CB95 /* Facebook+Extra-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Facebook+Extra-Prefix.pch"; sourceTree = "<group>"; };
-		79005A2E1713ED3E0050CB95 /* Facebook_Extra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Facebook_Extra.h; sourceTree = "<group>"; };
-		79005A301713ED3E0050CB95 /* Facebook_Extra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facebook_Extra.m; sourceTree = "<group>"; };
+		E802B6477D764A419E4B65F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +37,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79005A2A1713ED3E0050CB95 /* Foundation.framework in Frameworks */,
+				DD12E4217FA24C2898801D62 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +50,7 @@
 				79005A2B1713ED3E0050CB95 /* Facebook+Extra */,
 				79005A281713ED3E0050CB95 /* Frameworks */,
 				79005A271713ED3E0050CB95 /* Products */,
+				55D307F7138F47D7A205A767 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				79005A291713ED3E0050CB95 /* Foundation.framework */,
+				E802B6477D764A419E4B65F5 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -73,8 +74,6 @@
 		79005A2B1713ED3E0050CB95 /* Facebook+Extra */ = {
 			isa = PBXGroup;
 			children = (
-				79005A2E1713ED3E0050CB95 /* Facebook_Extra.h */,
-				79005A301713ED3E0050CB95 /* Facebook_Extra.m */,
 				79005A2C1713ED3E0050CB95 /* Supporting Files */,
 			);
 			path = "Facebook+Extra";
@@ -95,9 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79005A341713ED3E0050CB95 /* Build configuration list for PBXNativeTarget "Facebook+Extra" */;
 			buildPhases = (
+				5E5D24AF88F14045BA7E8EA0 /* Check Pods Manifest.lock */,
 				79005A221713ED3E0050CB95 /* Sources */,
 				79005A231713ED3E0050CB95 /* Frameworks */,
 				79005A241713ED3E0050CB95 /* CopyFiles */,
+				EF912CBBCE394B46B330C3D3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,12 +135,42 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E5D24AF88F14045BA7E8EA0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sanbox is not in sync with the Podfile.lock. Run 'pod install'.\nEOM\n    exit 1\nfi\n";
+		};
+		EF912CBBCE394B46B330C3D3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79005A221713ED3E0050CB95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79005A311713ED3E0050CB95 /* Facebook_Extra.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +201,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -193,7 +224,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -201,6 +232,7 @@
 		};
 		79005A351713ED3E0050CB95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D307F7138F47D7A205A767 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Facebook_Extra.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -213,6 +245,7 @@
 		};
 		79005A361713ED3E0050CB95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55D307F7138F47D7A205A767 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Facebook_Extra.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -242,6 +275,7 @@
 				79005A361713ED3E0050CB95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
